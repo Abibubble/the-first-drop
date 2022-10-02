@@ -22,7 +22,7 @@ export default function Layout({
 				<meta name="description" content={description} />
 				<meta
 					name="keywords"
-					content={`'rollercoaster, coaster, ride, theme, park, '${additionalKeywords}`}
+					content={`'the, first, drop, rollercoaster, coaster, ride, theme, park, '${additionalKeywords}`}
 				/>
 				<meta charSet="UTF-8" />
 				<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -35,7 +35,7 @@ export default function Layout({
 
 				<meta property="og:type" content={pageType} />
 				<meta property="og:title" name="title" content={title} />
-				<meta property="og:site_name" content="Coaster Site" />
+				<meta property="og:site_name" content="The First Drop" />
 				<meta property="og:description" content={description} />
 				<meta property="og:url" content={canonicalRef} />
 				<meta property="og:image" name="image" content={imageUrl} />
@@ -63,12 +63,12 @@ export default function Layout({
 }
 
 Layout.defaultProps = {
-	title: 'Coaster Site',
+	title: 'The First Drop',
 	additionalKeywords: '',
 	description:
-		'Coaster Site',
+		'The First Drop',
 	imageUrl: 'docs/finalpage.png',
-	imageAlt: 'An image of the final Coaster site on a range of devices',
-	canonicalRef: 'https://coaster-site.vercel.app/',
+	imageAlt: 'An image of The First Drop site on a range of devices',
+	canonicalRef: 'https://the-first-drop.vercel.app/',
 	pageType: 'website',
 };

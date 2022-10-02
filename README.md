@@ -1,12 +1,12 @@
-# Coaster site
+# The First Drop
 
-![GitHub contributors](https://img.shields.io/github/contributors/abibubble/coaster-site)
-![GitHub last commit](https://img.shields.io/github/last-commit/abibubble/coaster-site)
-![GitHub language count](https://img.shields.io/github/languages/count/abibubble/coaster-site)
-![GitHub top language](https://img.shields.io/github/languages/top/abibubble/coaster-site)
+![GitHub contributors](https://img.shields.io/github/contributors/abibubble/the-first-drop)
+![GitHub last commit](https://img.shields.io/github/last-commit/abibubble/the-first-drop)
+![GitHub language count](https://img.shields.io/github/languages/count/abibubble/the-first-drop)
+![GitHub top language](https://img.shields.io/github/languages/top/abibubble/the-first-drop)
 <img src="https://img.shields.io/badge/yarn-~1.22.15-blue" />
 [![NextJS](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
-![GitHub forks](https://img.shields.io/github/forks/abibubble/coaster-site?style=social)
+![GitHub forks](https://img.shields.io/github/forks/abibubble/the-first-drop?style=social)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
