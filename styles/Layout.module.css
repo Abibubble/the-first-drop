@@ -1,0 +1,16 @@
+.main {
+	background-color: #baacd8;
+	height: calc(100vh - 128px);
+}
+
+.content {
+	max-width: 992px;
+	width: 80%;
+	margin: auto;
+	padding-bottom: 16px;
+}
+
+.header,
+.footer {
+	height: 64px;
+}
