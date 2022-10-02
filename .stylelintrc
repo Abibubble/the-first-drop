@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-css-modules",
+    "stylelint-config-prettier"
+  ],
+  "rules": {
+    "shorthand-property-no-redundant-values": true,
+    "declaration-no-important": true,
+    "color-hex-case": "lower",
+    "max-line-length": 80,
+    "no-missing-end-of-source-newline": true,
+    "no-empty-first-line": true,
+    "no-extra-semicolons": true,
+    "no-eol-whitespace": true
+  }
+}
