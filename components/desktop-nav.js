@@ -1,5 +1,6 @@
 import styles from '@/styles/Desktop.module.css';
 import { useState } from 'react';
+import Link from 'next/link'
 import { useRouter } from 'next/router';
 
 export default function DesktopNav() {
@@ -15,11 +16,13 @@ export default function DesktopNav() {
 
 	return (
 		<div className={styles.desktopHeader}>
-			<a href="/">
-				<div className={styles.logoContainer}>
-					<p>The First Drop logo</p>
-				</div>
-			</a>
+			<Link href="/">
+				<a>
+					<div className={styles.logoContainer}>
+						<p>The First Drop logo</p>
+					</div>
+				</a>
+			</Link>
 
 			<div className={styles.search}>
 				<form onSubmit={handleSubmit}>
@@ -36,33 +39,51 @@ export default function DesktopNav() {
 				<ul>
 					{/* All users */}
 					<li>
-						<a href="/articles">All Coasters</a>
+						<Link href="/all-coasters">
+							<a>All Coasters</a>
+						</Link>
 					</li>
 					<li>
-						<a href="/videos">All Parks</a>
+						<Link href="/all-parks">
+							<a>All Parks</a>
+						</Link>
 					</li>
 					{/* Logged in only */}
 					<li>
-						<a href="/authors">Profile</a>
+						<Link href="/profile">
+							<a>Profile</a>
+						</Link>
 					</li>
 					<li>
-						<a href="/categories">My Coasters</a>
+						<Link href="/my-coasters">
+							<a>My Coasters</a>
+						</Link>
 					</li>
 					<li>
-						<a href="/categories">My Parks</a>
+						<Link href="/my-parks">
+							<a>My Parks</a>
+						</Link>
 					</li>
 					<li>
-						<a href="/categories">My Wish List</a>
+						<Link href="/wish-list">
+							<a>Wish List</a>
+						</Link>
 					</li>
 					<li>
-						<a href="/categories">Submit</a>
+						<Link href="/submit">
+							<a>Submit</a>
+						</Link>
 					</li>
 					<li>
-						<a href="/about">Logout</a>
+						<Link href="/logout">
+							<a>Logout</a>
+						</Link>
 					</li>
 					{/* Logged out only */}
 					<li>
-						<a href="/about">Login</a>
+						<Link href="/login">
+							<a>Login</a>
+						</Link>
 					</li>
 				</ul>
 			</nav>

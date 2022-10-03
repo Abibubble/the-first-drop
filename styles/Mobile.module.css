@@ -48,7 +48,7 @@
 }
 
 .visibleMainNav {
-	padding: 0 0 spacer-small 0;
+	padding: 0 0 spacer-small;
 	position: absolute;
 	right: 0;
 	top: spacer-xl;
