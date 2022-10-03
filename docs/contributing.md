@@ -6,6 +6,8 @@ The following contributing guidelines are designed to ensure consistency.
 
 - Keep all documentation updated
 - Use CSS variables where possible, add comments to explain reasoning if variables aren't used
+- If non-variable pixel values are used, they must be a multiple of 8, i.e. 240px, 64px, etc.
+- Borders must be a minimum of 2px thickness, which does not require a comment
 
 ## Component design
 

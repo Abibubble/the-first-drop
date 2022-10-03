@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link'
 import { useRouter } from 'next/router';
-import mobile from '@/styles/Mobile.module.css';
+import styles from '@/styles/Mobile.module.css';
 import { FaSearch, FaBars } from 'react-icons/fa';
 import { GrClose } from 'react-icons/gr';
 
@@ -19,7 +19,7 @@ export default function Header() {
 	};
 
 	return (
-		<div className={mobile.mobileHeader}>
+		<div className={styles.mobileHeader}>
 			<Link href="/">
 				<a>
 					<div className={styles.logoContainer}>
@@ -29,21 +29,21 @@ export default function Header() {
 			</Link>
 
 			<button
-				className={mobile.burgerIconContainer}
+				className={styles.burgerIconContainer}
 				onClick={() => {
 					setIsNavExpanded(!isNavExpanded);
 				}}
 			>
 				{isNavExpanded ? (
-					<GrClose className={mobile.burgerIcon} />
+					<GrClose className={styles.burgerIcon} />
 				) : (
-					<FaBars className={mobile.burgerIcon} />
+					<FaBars className={styles.burgerIcon} />
 				)}
 			</button>
 
 			<nav
 				className={
-					isNavExpanded ? `${mobile.visibleMainNav}` : `${mobile.hiddenMainNav}`
+					isNavExpanded ? `${styles.visibleMainNav}` : `${styles.hiddenMainNav}`
 				}
 			>
 				<ul>
@@ -96,7 +96,7 @@ export default function Header() {
 						</Link>
 					</li>
 					<li>
-						<div className={mobile.search}>
+						<div className={styles.search}>
 							<form onSubmit={handleSubmit}>
 								<input
 									type="text"

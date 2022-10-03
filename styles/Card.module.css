@@ -1,17 +1,16 @@
 @value colours: "./variables/colours.css";
-@value colour-black, colour-purple from colours;
+@value colour-light-grey, colour-black from colours;
 @value breakpoints: "./variables/breakpoints.css";
 @value breakpoint-large from breakpoints;
 @value spacers: "./variables/spacers.css";
-@value spacer-small, spacer-large from spacers;
+@value spacer-small, spacer-medium from spacers;
 
 .main {
-	background-color: colour-purple;
+	background-color: colour-light-grey;
 	color: colour-black;
-	height: spacer-large;
-	min-width: spacer-large;
-	width: fit-content;
-	padding: 0 spacer-small;
+	height: 240px;
+	width: 240px;
+	padding: spacer-medium;
 	border-radius: 15%;
 	-webkit-box-shadow: -2px 4px 8px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: -2px 4px 8px 0px rgba(0,0,0,0.75);

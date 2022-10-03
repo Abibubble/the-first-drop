@@ -1,0 +1,25 @@
+@value colours: "./variables/colours.css";
+@value colour-white, colour-light-grey, colour-dark-grey, colour-black, colour-purple from colours;
+
+.main {
+	background-color: colour-light-grey;
+	color: colour-black;
+	height: fit-content;
+	width: 100%;
+	margin: 0 auto;
+	border: 2px solid colour-dark-grey;
+}
+
+.main thead {
+	background-color: colour-purple;
+	color: colour-black;
+	width: 100%;
+}
+
+.main tbody tr:nth-of-type(odd) {
+	background-color: colour-light-grey;
+}
+
+.main tbody tr:nth-of-type(even) {
+	background-color: colour-white;
+}

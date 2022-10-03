@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Layout from '@/components/layout';
 import Button from '@/components/button';
+import Card from '@/components/card';
+import Table from '@/components/table';
 
 export default function Home() {
 	return (
@@ -10,6 +12,38 @@ export default function Home() {
 
         <p>Test homepage</p>
 				<Button>Test button</Button>
+				<Card>
+					<p>Test card</p>
+				</Card>
+				<Table>
+					<thead>
+						<th>Test header</th>
+						<th>Test header</th>
+						<th>Test header</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Test description</td>
+							<td>Test description</td>
+							<td>Test description</td>
+						</tr>
+						<tr>
+							<td>Test description</td>
+							<td>Test description</td>
+							<td>Test description</td>
+						</tr>
+						<tr>
+							<td>Test description</td>
+							<td>Test description</td>
+							<td>Test description</td>
+						</tr>
+						<tr>
+							<td>Test description</td>
+							<td>Test description</td>
+							<td>Test description</td>
+						</tr>
+					</tbody>
+				</Table>
 			</Layout>
 		</>
 	);
