@@ -1,5 +1,5 @@
 /* Typography */
-@value h1: 64px;
-@value heading: 32px;
-@value paragraph: 24px;
-@value terms: 14px;
+@value typography-h1: 64px;
+@value typography-heading: 32px;
+@value typography-paragraph: 24px;
+@value typography-terms: 14px;

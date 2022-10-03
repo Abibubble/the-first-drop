@@ -6,15 +6,10 @@
 @value spacer-small, spacer-xl from spacers;
 
 .main {
-	background-color: colour-light-grey;
-	color: colour-black;
-	height: calc(100vh - 128px - spacer-small);
-	padding-top: spacer-small;
-}
-
-.content {
-	max-width: breakpoint-large;
-	width: 80%;
-	margin: auto;
-	padding-bottom: spacer-small;
+	height: spacer-xl;
+	padding: 0 spacer-small;
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	justify-items: center;
 }
