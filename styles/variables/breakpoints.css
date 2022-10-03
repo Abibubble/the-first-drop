@@ -1,0 +1,6 @@
+/* Breakpoints */
+@value breakpoiint-min: 320px;
+@value breakpoiint-small: 375px;
+@value breakpoiint-medium: 768px;
+@value breakpoiint-large: 992px;
+@value breakpoiint-max: 1140px;

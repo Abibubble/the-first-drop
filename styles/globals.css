@@ -1,9 +1,16 @@
+@value colours: "./variables/colours.css";
+@value breakpoints: "./variables/breakpoints.css";
+@value spacers: "./variables/spacers.css";
+@value typography: "./variables/typography.css";
+@value typography-paragraph from typography;
+@value colour-black, colour-white from colours;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Arial, sans-serif;
+  font-size: typography-paragraph;
 }
 
 a {
@@ -19,8 +26,9 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
-    color: white;
-    background: black;
+    color: colour-black;
+    background: colour-white;
   }
 }
