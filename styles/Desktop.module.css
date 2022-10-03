@@ -1,0 +1,80 @@
+@value colours: "./variables/colours.css";
+@value colour-white, colour-purple from colours;
+@value breakpoints: "./variables/breakpoints.css";
+@value breakpoint-large, breakpoint-max from breakpoints;
+@value spacers: "./variables/spacers.css";
+@value spacer-small, spacer-large, spacer-xl from spacers;
+
+.desktopHeader {
+	display: none;
+}
+
+@media screen and (min-width: breakpoint-large) {
+	.desktopHeader {
+		display: grid;
+		grid-template-areas: 'logo search nav';
+		height: spacer-xl;
+	}
+
+	.logoContainer {
+		height: 100%;
+		width: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+		grid-area: logo;
+	}
+
+	.logo {
+		max-height: 100%;
+		max-width: 100%;
+	}
+
+	.search {
+		grid-area: search;
+		margin: 0;
+		height: spacer-large;
+		align-self: center;
+		width: 100%;
+	}
+
+	.search input {
+		max-width: 400px;
+		width: 100%;
+		height: spacer-large;
+		padding: 4px;
+		border: 2px solid colour-purple;
+		border-radius: 4px;
+	}
+
+	.search input::placeholder {
+		color: colour-white;
+	}
+
+	.mainNav {
+		grid-area: nav;
+		padding: 0 spacer-small;
+	}
+
+	.mainNav ul {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		text-align: center;
+		align-items: center;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.mainNav li {
+		text-decoration: none;
+		display: inline;
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width: breakpoint-max) {
+	.mainNav li {
+		font-size: 1.2rem;
+	}
+}

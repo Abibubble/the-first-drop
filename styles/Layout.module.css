@@ -1,14 +1,15 @@
 @value colours: "./variables/colours.css";
-@value breakpoints: "./variables/breakpoints.css";
-@value spacers: "./variables/spacers.css";
 @value colour-black, colour-light-grey from colours;
+@value breakpoints: "./variables/breakpoints.css";
 @value breakpoint-large from breakpoints;
-@value spacer-small, spacer-xl from spacers;
+@value spacers: "./variables/spacers.css";
+@value spacer-small from spacers;
 
 .main {
 	background-color: colour-light-grey;
 	color: colour-black;
-	height: calc(100vh - 128px);
+	height: calc(100vh - 128px - spacer-small);
+	padding-top: spacer-small;
 }
 
 .content {
@@ -16,9 +17,4 @@
 	width: 80%;
 	margin: auto;
 	padding-bottom: spacer-small;
-}
-
-.header,
-.footer {
-	height: spacer-xl;
 }

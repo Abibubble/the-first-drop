@@ -1,0 +1,11 @@
+@value spacers: "./variables/spacers.css";
+@value spacer-small, spacer-xl from spacers;
+
+.main {
+	height: spacer-xl;
+	padding: 0 spacer-small;
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	justify-items: center;
+}
