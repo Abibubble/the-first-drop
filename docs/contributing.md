@@ -5,12 +5,13 @@ The following contributing guidelines are designed to ensure consistency.
 ## General
 
 - Keep all documentation updated
+- Use CSS variables where possible, add comments to explain reasoning if variables aren't used
 
 ## Component design
 
 - Be mindful of HTML semantics and accessibility when building new components and pages
 - All components should be functional, rather than class-based
-- Components should be styled using modular CSS
+- Components should be styled using modular CSS and CSS variables
 
 ## Writing tests (Not currently set up)
 
