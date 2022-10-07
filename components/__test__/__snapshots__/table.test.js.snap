@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table should render table component 1`] = `
+<table
+  className="main"
+>
+  <thead>
+    <th>
+      Test header
+    </th>
+    <th>
+      Test header
+    </th>
+    <th>
+      Test header
+    </th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Test description
+      </td>
+      <td>
+        Test description
+      </td>
+      <td>
+        Test description
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Test description
+      </td>
+      <td>
+        Test description
+      </td>
+      <td>
+        Test description
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
