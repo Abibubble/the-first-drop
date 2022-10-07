@@ -15,7 +15,8 @@
     "test:coverage": "CI=true npm test -- --env=jsdom --coverage",
     "test:update": "jest --updateSnapshot",
     "test:compact": "jest 2>&1 | grep 'FAIL' | sort -t: -u -k1,1",
-    "commit:check": "npm run lint && npm run test && npm run build",
+    "test:a11y": "node scripts/pa11y.js",
+    "commit:check": "npm run lint && npm run test && npm run test:a11y && npm run build",
     "dep:update": "./node_modules/.bin/npm-check -u"
   },
   "dependencies": {
@@ -34,12 +35,15 @@
     "@testing-library/react": "13.2.0",
     "@testing-library/user-event": "14.2.0",
     "@types/react": "18.0.9",
+    "app-root-path": "^3.1.0",
     "babel-jest": "^27.4.6",
+    "colors": "^1.4.0",
     "eslint-config-next": "12.3.1",
     "eslint-plugin-testing-library": "^5.7.2",
     "jest": "28.1.0",
     "jest-environment-jsdom": "28.1.0",
     "npm-check": "^6.0.1",
+    "pa11y": "^6.2.3",
     "prettier": "^2.7.1",
     "react-test-renderer": "^18.2.0",
     "stylelint": "^14.13.0",
@@ -47,5 +51,8 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended": "^9.0.0",
     "testing-library": "^0.0.2"
-  }
+  },
+  "accessibility": [
+    "https://the-first-drop.vercel.app/"
+  ]
 }
