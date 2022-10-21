@@ -43,7 +43,7 @@ async function runPa11y(url) {
       console.log(colors.brightCyan(`The offending code: ${issue.context}`))
       console.log(
         colors.brightMagenta(
-          '           ================================================================          '
+          '          ================================================================          '
         )
       )
     })
