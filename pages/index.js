@@ -16,9 +16,11 @@ export default function Home() {
         </Card>
         <Table>
           <thead>
-            <th>Test header</th>
-            <th>Test header</th>
-            <th>Test header</th>
+            <tr>
+              <th>Test header</th>
+              <th>Test header</th>
+              <th>Test header</th>
+            </tr>
           </thead>
           <tbody>
             <tr>
