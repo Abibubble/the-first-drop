@@ -2,6 +2,7 @@
 
 exports[`Button should render button component 1`] = `
 <button
+  aria-label="Button"
   className="main"
   rel=""
   target="_self"

@@ -5,8 +5,6 @@ const appRoot = require('app-root-path')
 const packageJson = require(appRoot + '/package.json')
 const colors = require('colors/safe')
 let data
-let hideEls
-let defaultHideEls
 
 // Checks if a config file exists, and if it does, add the path to it to config variable.
 try {
@@ -18,8 +16,10 @@ try {
 async function runPa11y(url) {
   try {
     const result = await pa11y(url)
-    // print out message to user with celebratory message
+
+    // Print out message to user with celebratory message
     console.log(colors.yellow('A11y summary for ' + url))
+
     if (result.issues.length == 0) {
       console.log(
         colors.green(`
@@ -52,10 +52,4 @@ async function runPa11y(url) {
   }
 }
 
-// RUN THROUGH TEAM'S PROJECTS
-
-if (data) {
-  for (let i = 0; i < data.length; i++) {
-    runPa11y(data[i])
-  }
-}
+data?.forEach(x => runPa11y(x))

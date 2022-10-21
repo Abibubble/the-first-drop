@@ -33,6 +33,7 @@ export default function Header() {
         onClick={() => {
           setIsNavExpanded(!isNavExpanded)
         }}
+        title="Toggle mobile menu"
       >
         {isNavExpanded ? (
           <GrClose className={styles.burgerIcon} />
@@ -105,7 +106,7 @@ export default function Header() {
                   onChange={e => setTerm(e.target.value)}
                   title="search"
                 />
-                <input type="submit" placeholder="Submit" />
+                <input type="submit" placeholder="Submit" value="Submit" />
               </form>
             </div>
           </li>
