@@ -30,8 +30,14 @@ exports[`Header should render header component 1`] = `
         <input
           onChange={[Function]}
           placeholder="Search"
+          title="search"
           type="text"
           value=""
+        />
+        <input
+          placeholder="Submit"
+          type="submit"
+          value="Submit"
         />
       </form>
     </div>
@@ -277,8 +283,14 @@ exports[`Header should render header component 1`] = `
               <input
                 onChange={[Function]}
                 placeholder="Search"
+                title="search"
                 type="text"
                 value=""
+              />
+              <input
+                placeholder="Submit"
+                type="submit"
+                value="Submit"
               />
             </form>
           </div>

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Layout from '@/components/layout'
 import Button from '@/components/button'
 import Card from '@/components/card'
