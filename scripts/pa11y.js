@@ -31,9 +31,11 @@ async function runPa11y(url) {
     } else {
       console.log(
         colors.yellow(
-          `There ${result.issues.length == 1 ? 'is' : 'are'} ${
-            result.issues.length
-          } issue${result.issues.length == 1 ? '' : 's'} with this page:`
+          `There ${
+            result.issues.length > 1
+              ? `are ${result.issues.length} issues`
+              : 'is 1 issue'
+          } with this page:`
         )
       )
     }
